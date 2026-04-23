@@ -3,16 +3,55 @@
 <head>
   <title>JavaScript Can Change Images</title>
 </head>
-<body>
+<body bgcolor="#f0f0f0">
 
-<h1>JavaScript Can Change Images</h1>
+<br><br>
 
-<img id="myImage" onclick="changeImage()"
-     src="image1.jpg"
-     width="100" height="180"
-     style="cursor: pointer;">
+<center>
 
-<p>Click the image to toggle between two pictures.</p>
+  <font face="Georgia" size="6" color="#333333">
+    <b>JavaScript Can Change Images</b>
+  </font>
+
+  <br><br>
+
+  <table border="4" bordercolor="#444444" cellpadding="15" bgcolor="#ffffff">
+    <tr>
+      <td align="center">
+
+        <img id="myImage"
+             onclick="changeImage()"
+             src="image1.jpeg"
+             width="250"
+             height="300"
+             style="cursor:pointer;"
+             border="3"
+             alt="Click to change image">
+
+      </td>
+    </tr>
+    <tr>
+      <td align="center" bgcolor="#333333">
+        <font face="Georgia" size="4" color="#ffffff">
+          &#128247; Click the image to toggle
+        </font>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+
+  <table border="2" bordercolor="#888888" cellpadding="8" bgcolor="#ffffff">
+    <tr>
+      <td>
+        <font face="Arial" size="3" color="#555555">
+          &nbsp;&nbsp; Click the image above to switch between two pictures &nbsp;&nbsp;
+        </font>
+      </td>
+    </tr>
+  </table>
+
+</center>
 
 <script>
   function changeImage() {
