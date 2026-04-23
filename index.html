@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Can Change Images</title>
+</head>
+<body>
+
+<h1>JavaScript Can Change Images</h1>
+
+<img id="myImage" onclick="changeImage()"
+     src="image1.jpg"
+     width="100" height="180"
+     style="cursor: pointer;">
+
+<p>Click the image to toggle between two pictures.</p>
+
+<script>
+  function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("image1")) {
+      image.src = "image2.jpg";
+    } else {
+      image.src = "image1.jpg";
+    }
+  }
+</script>
+
+</body>
+</html>
